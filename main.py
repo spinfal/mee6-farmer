@@ -13,12 +13,14 @@ print(cl('farming has started!', 'green'))
 
 #change your words here
 message = ['hm', 'bruh', 'main is lame', 'hmhm', 'imbored', 'aaaamtired']
-#then change line 21 to correspond with the word-count
+#then change line 22 to correspond with the word-count
 
 headers = {'Authorization': token, 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36', 'Accept': '*/*',}
 
 while True:
+#sel is the word-count
   sel = random.randint(0,5)
+#sleep is the delay between each message
   sleep = random.randint(61,65)
   sendmsg = requests.post('https://discordapp.com/api/v6/channels/' + channel + '/messages', json={'content': message[sel]}, headers=headers)
   print(cl(message[sel], 'cyan') + ' sent in the channel ' + cl(channel, 'cyan'))
