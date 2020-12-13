@@ -7,8 +7,4 @@ if you wish to modify it, feel free to download this.
 
 <b>requirements</b>
 - requests
-<<<<<<< HEAD
 - random
-=======
-- random
->>>>>>> origin/master
